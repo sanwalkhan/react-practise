@@ -1,5 +1,6 @@
 import { Component } from "react";
 
+
 export default class ClassComponent  extends Component{
     
     render(){
@@ -16,9 +17,10 @@ export default class ClassComponent  extends Component{
             {
                 cities.map((city ,i ) => {
                     return(
-                       <>
+                       <div key={i}>
+                     
                        <h4> {city} </h4>
-                       </>
+                       </div>
                     )
                 })
             }
@@ -29,3 +31,5 @@ export default class ClassComponent  extends Component{
     
     }
 }
+
+

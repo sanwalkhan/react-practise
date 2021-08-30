@@ -2,9 +2,16 @@ import './App.css';
 // import Cards from './component/cards';
 // import Header from "./component/Header"
 
-import ClassComponent from './component/classcomponent';
+// import ClassComponent from './component/classcomponent';
 
+// import propTypes from 'prop-types';
 
+let a = 444;
+
+function ca() { 
+  a =999;
+  alert(a)
+ }
 
 
 
@@ -13,36 +20,44 @@ import ClassComponent from './component/classcomponent';
 
 function App() { 
 
-  const email = "@yahoo.com";
-const name = "ahmed";
+  // const email = "@yahoo.com";
+// const name = 'sanwal';
 
-function showname(){
-  alert(name)
-}
+// function showname(){
+  // alert(name)
+// }
 
 
-const object = {name  , email , showname}
+// const object = {name  , email , showname}
 
-const  arr = ["lahore" , "multan " , "fsd", "sgd" , {object} ]
+
+// const  arr = ["lahore" , "multan " , "fsd", "sgd" , {object} ]
 
 
 
 
   return (
-  <div>
-    <ClassComponent arr={arr} />
+//   <div>
+//     <ClassComponent arr={arr} />
 
-{/* <Header/>
+// {/* <Header/> */}
 
-<Cards/> */}
-  </div>
+// {/* <Cards/>  */}
+//   </div>
 
+    <div className="App">
+     <h1>{a}</h1>
+     <button onClick={ca}>btn</button> 
+    </div>
     
 
   );
 }
 
 
+// App.prototype = {
+  // name: propTypes.number.isRequired
 
+// }
 
 export default App;
