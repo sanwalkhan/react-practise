@@ -1,4 +1,10 @@
+import { useState } from 'react';
 import './App.css';
+
+
+
+// import State from './component/state'
+
 // import Cards from './component/cards';
 // import Header from "./component/Header"
 
@@ -6,12 +12,14 @@ import './App.css';
 
 // import propTypes from 'prop-types';
 
-let a = 444;
+// let a = 444;
 
-function ca() { 
-  a =999;
-  alert(a)
- }
+// function ca() { 
+//   a =999;
+//   alert(a)
+//  }
+
+
 
 
 
@@ -34,6 +42,13 @@ function App() {
 // const  arr = ["lahore" , "multan " , "fsd", "sgd" , {object} ]
 
 
+const [a, seta] = useState(444444)
+
+function ca(){
+  seta(1242)
+}
+
+
 
 
   return (
@@ -49,6 +64,7 @@ function App() {
      <h1>{a}</h1>
      <button onClick={ca}>btn</button> 
     </div>
+
     
 
   );
