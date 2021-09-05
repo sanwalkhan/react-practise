@@ -1,6 +1,6 @@
 import React from 'react'
 import data from './newData'
-import propTypes from 'prop-types'
+
 
 
 const Cards = () => {
@@ -28,9 +28,7 @@ const Cards = () => {
 }
 
 
-Cards.propTypes = {
-  price: propTypes.number.isRequired
-} 
+
 
 
 export default Cards
