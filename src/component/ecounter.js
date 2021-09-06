@@ -5,7 +5,8 @@ export default class Counter extends Component{
     constructor(){
         super()
         this.state ={
-            name : "Sanwal"
+            name : "Sanwal",
+            count: 0
         }
     }
     render(){
@@ -15,6 +16,8 @@ export default class Counter extends Component{
                 <h2> {this.state.name} </h2>
 
                 <button onClick={()=> this.setState({name : "Khan"})}>Btn</button>
+                <h1>{this.state.count} </h1>
+                <button onClick={()=>this.setState({count: this.state.count+1})}>Inc</button>
             </div>
         )
     }

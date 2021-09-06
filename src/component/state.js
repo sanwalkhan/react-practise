@@ -32,9 +32,9 @@ export const State = () => {
 
         <button onClick={updateState}>Update Name</button>
 
-        <button onClick={increment}>Increment </button>
+        <button onClick={increment}>Increment</button>
 
-        <button onClick={()=>setFlag(!Flag)}>Change Flag</button>
+        <button onClick={setFlag(!Flag)}> {Flag?"Lock":"Unlock"} </button>
 
 
         </div>
