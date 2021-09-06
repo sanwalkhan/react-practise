@@ -1,45 +1,36 @@
-import React, { useState } from 'react'
-
-
+import React, { useState } from "react";
 
 export const State = () => {
+  const [name, setname] = useState("Sanwal");
 
-    const [name, setname] = useState("Sanwal")
+  const [number, setnumber] = useState(21);
 
-    const [number, setnumber] = useState(21)
+  const [Flag, setFlag] = useState(true);
 
-    const [Flag, setFlag] = useState(true)
+  function updateState() {
+    setname("Khan");
+    // console.log(state);
+  }
 
+  function increment() {
+    setnumber(number + 1);
+  }
 
-    function updateState(){
-        setname('Khan')   
-        // console.log(state);
-    }
+  return (
+    <div>
+      <h1>Name : {name} </h1>
 
-    function  increment() { 
-        setnumber (number + 1)
-     }
+      <p> age : {number} </p>
 
+      <p> student : {Flag.toString()} </p>
 
-    return (
-        <div>
-            
-            <h1>Name : {name} </h1>
+      <button onClick={updateState}>Update Name</button>
 
-            <p> age : {number} </p>
+      <button onClick={increment}>Increment</button>
 
-            <p> student : {Flag.toString() } </p>
+      <button onClick={setFlag(!Flag)}> </button>
+    </div>
+  );
+};
 
-        <button onClick={updateState}>Update Name</button>
-
-        <button onClick={increment}>Increment</button>
-
-        <button onClick={setFlag(!Flag)}> {Flag?"Lock":"Unlock"} </button>
-
-
-        </div>
-    )
-}
-
-
-export default State
+export default State;

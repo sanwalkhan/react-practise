@@ -1,8 +1,9 @@
 // import { useState } from 'react';
 // import './App.css';
 
-import  Counter  from "./component/ecounter";
+// import Counter from "./component/ecounter";
 
+import MyComponent from "./component/stateclasscomponents";
 
 // import State from './component/state'
 
@@ -15,68 +16,54 @@ import  Counter  from "./component/ecounter";
 
 // let a = 444;
 
-// function ca() { 
+// function ca() {
 //   a =999;
 //   alert(a)
 //  }
 
-
-
-
-
-
-
-
-function App() { 
-
+function App() {
   // const email = "@yahoo.com";
-// const name = 'sanwal';
+  // const name = 'sanwal';
 
-// function showname(){
+  // function showname(){
   // alert(name)
-// }
+  // }
 
+  // const object = {name  , email , showname}
 
-// const object = {name  , email , showname}
+  // const  arr = ["lahore" , "multan " , "fsd", "sgd" , {object} ]
 
+  // const [a, seta] = useState(444444)
 
-// const  arr = ["lahore" , "multan " , "fsd", "sgd" , {object} ]
-
-
-// const [a, seta] = useState(444444)
-
-// function ca(){
-//   seta(1242)
-// }
-
-
-
+  // function ca(){
+  //   seta(1242)
+  // }
 
   return (
-//   <div>
-//     <ClassComponent arr={arr} />
+    //   <div>
+    //     <ClassComponent arr={arr} />
 
-// {/* <Header/> */}
+    // {/* <Header/> */}
 
-// {/* <Cards/>  */}
-//   </div>
+    // {/* <Cards/>  */}
+    //   </div>
 
     // <div className="App">
     //  <h1>{a}</h1>
-    //  <button onClick={ca}>btn</button> 
+    //  <button onClick={ca}>btn</button>
     // </div>
 
     <div>
-      <Counter />
-    </div>
-    
+      {/* <Counter /> */}
 
+    <MyComponent />
+
+    </div>
   );
 }
 
-
 // App.prototype = {
-  // name: propTypes.number.isRequired
+// name: propTypes.number.isRequired
 
 // }
 
