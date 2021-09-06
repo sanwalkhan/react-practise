@@ -1,6 +1,7 @@
-import { useState } from 'react';
-import './App.css';
+// import { useState } from 'react';
+// import './App.css';
 
+import  Counter  from "./component/ecounter";
 
 
 // import State from './component/state'
@@ -42,11 +43,11 @@ function App() {
 // const  arr = ["lahore" , "multan " , "fsd", "sgd" , {object} ]
 
 
-const [a, seta] = useState(444444)
+// const [a, seta] = useState(444444)
 
-function ca(){
-  seta(1242)
-}
+// function ca(){
+//   seta(1242)
+// }
 
 
 
@@ -60,11 +61,14 @@ function ca(){
 // {/* <Cards/>  */}
 //   </div>
 
-    <div className="App">
-     <h1>{a}</h1>
-     <button onClick={ca}>btn</button> 
-    </div>
+    // <div className="App">
+    //  <h1>{a}</h1>
+    //  <button onClick={ca}>btn</button> 
+    // </div>
 
+    <div>
+      <Counter />
+    </div>
     
 
   );

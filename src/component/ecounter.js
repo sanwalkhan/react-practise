@@ -1,21 +1,20 @@
 import { Component } from "react";
 
-export class Ecounter extends Component(){
-    
-    constructor(props){
-        super(props)
-        this.state = {
-            count : 0,
+export default class Counter extends Component{
+
+    constructor(){
+        super()
+        this.state ={
+            name : "Sanwal"
         }
-        this.name = props.a
     }
-
-
-
     render(){
         return(
             <div>
+                <h1> Class Component</h1>
+                <h2> {this.state.name} </h2>
 
+                <button onClick={()=> this.setState({name : "Khan"})}>Btn</button>
             </div>
         )
     }
