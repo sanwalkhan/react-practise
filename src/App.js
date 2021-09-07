@@ -1,9 +1,9 @@
 // import { useState } from 'react';
 // import './App.css';
 
-// import Counter from "./component/ecounter";
+import Counter from "./component/ecounter";
 
-import MyComponent from "./component/stateclasscomponents";
+// import MyComponent from "./component/stateclasscomponents";
 
 // import State from './component/state'
 
@@ -54,9 +54,9 @@ function App() {
     // </div>
 
     <div>
-      {/* <Counter /> */}
+      <Counter />
 
-    <MyComponent />
+    {/* <MyComponent /> */}
 
     </div>
   );
