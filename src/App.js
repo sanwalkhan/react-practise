@@ -1,7 +1,11 @@
 // import { useState } from 'react';
-// import './App.css';
+import './App.css';
 
-import Counter from "./component/ecounter";
+// import { List } from "./component/list";
+
+import { SlideBar } from "./component/slidebar";
+
+// import Counter from "./component/ecounter";
 
 // import MyComponent from "./component/stateclasscomponents";
 
@@ -54,7 +58,11 @@ function App() {
     // </div>
 
     <div>
-      <Counter />
+      {/* <Counter /> */}
+
+    {/* <List/> */}
+
+    <SlideBar />
 
     {/* <MyComponent /> */}
 

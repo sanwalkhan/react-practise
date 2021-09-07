@@ -1,4 +1,4 @@
-const data = [
+const Data = [
     {
       id: 1,
       name: 'Bertie Yates',
@@ -36,4 +36,4 @@ const data = [
     },
   ];
   
-  export default data
+  export default Data
