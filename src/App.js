@@ -1,9 +1,12 @@
 // import { useState } from 'react';
-import './App.css';
+// import './App.css';
+import { Menu } from "./component/menu";
+
+// import { Buttons } from "./component/buttons";
 
 // import { List } from "./component/list";
 
-import { SlideBar } from "./component/slidebar";
+// import { SlideBar } from "./component/slidebar";
 
 // import Counter from "./component/ecounter";
 
@@ -62,7 +65,10 @@ function App() {
 
     {/* <List/> */}
 
-    <SlideBar />
+    {/* <SlideBar /> */}
+    <Menu />
+
+    {/* <Buttons/> */}
 
     {/* <MyComponent /> */}
 
