@@ -9,7 +9,7 @@ export const Menu = () => {
   const setcategory = new Set(category);
   const setmenu = ["All", ...setcategory];
 
-  // console.log(setmenu);
+  // console.log(setmenu);  
   // console.log(setcategory);
   // console.log(category);
 
