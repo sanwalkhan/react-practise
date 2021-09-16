@@ -1,13 +1,20 @@
 import React from "react";
 
 class Parent extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      email: "anil@yahoo.com",
+      email: "sidhu@gmail.com",
     };
-
+    console.log(props.count)
     console.log("Sanwal");
+  }
+  componentDidUpdate(preprops, prestate, snapshot) {
+    if (prestate.data === this.state.date) {
+      console.log("Both states are equal ");
+    }
+    console.log("Component did update :", prestate);
+    console.log(preprops);
   }
 
   componentDidMount() {

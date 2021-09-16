@@ -1,4 +1,4 @@
-// import { useState } from 'react';
+import { useState } from 'react';
 // import './App.css';
 // import { State } from "./component/statefunctionalcomponent";
 
@@ -45,6 +45,8 @@ function App() {
   //   seta(1242)
   // }
 
+  const [count, setcount] = useState(0)
+
   return (
     //   <div>
     //     <ClassComponent arr={arr} />
@@ -61,8 +63,9 @@ function App() {
 
     <div>
       {/* <Counter /> */}
-
-      <Child /> 
+     
+    <button onClick={()=>setcount(count+1)}>BTN</button>
+      <Child count = {count}/> 
 
     {/* <List/> */}
 

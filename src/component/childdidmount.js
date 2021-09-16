@@ -9,7 +9,7 @@ export const Child = () => {
         <div>
             <div className="App">
                 <h1> Render Method in React</h1>
-                <Parent />
+                <Parent  />
 
                 {/* <button onClick={}></button> */}
 
