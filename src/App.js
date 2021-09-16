@@ -1,6 +1,6 @@
 // import { useState } from 'react';
-import './App.css';
-
+// import './App.css';
+import { State } from "./component/statefunctionalcomponent";
 // import { List } from "./component/list";
 
 // import { SlideBar } from "./component/slidebar";
@@ -65,6 +65,8 @@ function App() {
     {/* <SlideBar /> */}
 
     {/* <MyComponent /> */}
+
+    <State />
 
     </div>
   );
