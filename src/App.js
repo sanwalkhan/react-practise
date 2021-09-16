@@ -1,6 +1,8 @@
 // import { useState } from 'react';
 // import './App.css';
-import { State } from "./component/statefunctionalcomponent";
+// import { State } from "./component/statefunctionalcomponent";
+
+import { Child } from "./component/childdidmount";
 // import { List } from "./component/list";
 
 // import { SlideBar } from "./component/slidebar";
@@ -60,13 +62,15 @@ function App() {
     <div>
       {/* <Counter /> */}
 
+      <Child /> 
+
     {/* <List/> */}
 
     {/* <SlideBar /> */}
 
     {/* <MyComponent /> */}
 
-    <State />
+    {/* <State /> */}
 
     </div>
   );
