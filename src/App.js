@@ -3,7 +3,7 @@ import './App.css';
 
 // import { List } from "./component/list";
 
-import { SlideBar } from "./component/slidebar";
+// import { SlideBar } from "./component/slidebar";
 
 // import Counter from "./component/ecounter";
 
@@ -62,7 +62,7 @@ function App() {
 
     {/* <List/> */}
 
-    <SlideBar />
+    {/* <SlideBar /> */}
 
     {/* <MyComponent /> */}
 
