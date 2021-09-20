@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import React from 'react';
 // import './App.css';
-// import { State } from "./component/statefunctionalcomponent";
-
-import { Child } from "./component/childdidmount";
+// import { MyComponent } from "./component/statefunctionalcomponent";
+import MyComponent from './component/stateclasscomponents';
+// import { Child } from "./component/childdidmount";
 // import { List } from "./component/list";
 
 // import { SlideBar } from "./component/slidebar";
@@ -45,7 +45,7 @@ function App() {
   //   seta(1242)
   // }
 
-  const [count, setcount] = useState(0)
+  // const [count, setcount] = useState(0)
 
   return (
     //   <div>
@@ -64,8 +64,8 @@ function App() {
     <div>
       {/* <Counter /> */}
      
-    <button onClick={()=>setcount(count+1)}>BTN</button>
-      <Child count = {count}/> 
+    {/* <button onClick={()=>setcount(count+1)}>BTN</button> */}
+      {/* <Child count = {count}/>  */}
 
     {/* <List/> */}
 
@@ -73,7 +73,7 @@ function App() {
 
     {/* <MyComponent /> */}
 
-    {/* <State /> */}
+    <MyComponent />
 
     </div>
   );
