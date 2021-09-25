@@ -12,7 +12,7 @@ export const SlideBar = () => {
 
       <button type="button" className="btn btn-danger" onClick={() => setpersons([])}> clear </button>
 
-      <List persons={persons} />
+      <List person={persons} />
     </div>
   );
 };
