@@ -1,87 +1,32 @@
-import { useState } from 'react';
-// import './App.css';
-// import { State } from "./component/statefunctionalcomponent";
+import { useEffect, useState } from "react";
 
-import { Child } from "./component/childdidmount";
-// import { List } from "./component/list";
+function App() { 
 
-// import { SlideBar } from "./component/slidebar";
+  const [num, setnum] = useState(0)
+  const [nam, setnam] = useState(10)
 
-// import Counter from "./component/ecounter";
+  useEffect(() => {
+    console.log("Useeffect..................");
+  }, [nam] )
 
-// import MyComponent from "./component/stateclasscomponents";
+  useEffect(() =>{
+    console.log("Useeffecttttt");
+  } , [num] )
+    return (
+      <div>
+        <h1> {num} </h1>
+        <h1>
+          {nam}
+        </h1>
+      <button onClick={ ()=> setnum(num + 1) } >Btn</button>
 
-// import State from './component/state'
+      <button onClick={ ()=> setnam(nam - 1) } >Btn2</button>
 
-// import Cards from './component/cards';
-// import Header from "./component/Header"
+      </div>
+    
+  )
+    };
 
-// import ClassComponent from './component/classcomponent';
 
-// import propTypes from 'prop-types';
 
-// let a = 444;
-
-// function ca() {
-//   a =999;
-//   alert(a)
-//  }
-
-function App() {
-  // const email = "@yahoo.com";
-  // const name = 'sanwal';
-
-  // function showname(){
-  // alert(name)
-  // }
-
-  // const object = {name  , email , showname}
-
-  // const  arr = ["lahore" , "multan " , "fsd", "sgd" , {object} ]
-
-  // const [a, seta] = useState(444444)
-
-  // function ca(){
-  //   seta(1242)
-  // }
-
-  const [count, setcount] = useState(0)
-
-  return (
-    //   <div>
-    //     <ClassComponent arr={arr} />
-
-    // {/* <Header/> */}
-
-    // {/* <Cards/>  */}
-    //   </div>
-
-    // <div className="App">
-    //  <h1>{a}</h1>
-    //  <button onClick={ca}>btn</button>
-    // </div>
-
-    <div>
-      {/* <Counter /> */}
-     
-    <button onClick={()=>setcount(count+1)}>BTN</button>
-      <Child count = {count}/> 
-
-    {/* <List/> */}
-
-    {/* <SlideBar /> */}
-
-    {/* <MyComponent /> */}
-
-    {/* <State /> */}
-
-    </div>
-  );
-}
-
-// App.prototype = {
-// name: propTypes.number.isRequired
-
-// }
-
-export default App;
+ export default App
