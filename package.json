@@ -48,5 +48,6 @@
   "bugs": {
     "url": "https://github.com/sanwalkhan/react-practise/issues"
   },
-  "homepage": "https://github.com/sanwalkhan/react-practise#readme"
+  "homepage": "https://github.com/sanwalkhan/react-practise#readme",
+  "devDependencies": {}
 }
